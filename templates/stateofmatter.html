@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>State-Of-Matter</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif; background-image: linear-gradient(to right, #85C1E9,#AED6F1,#D2B4DE,#E8DAEF,#F9E79F,#F7DC6F);}
+
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+  font-family: Courier New;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #FFD384;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="static/images/stateofmatter.jpg" width="100%" height="50%">
+</div>
+<div class="navbar">
+  <a href="{{ url_for('home') }}"> Home</a>
+  <a  class="active" href="{{ url_for('stateofmatter') }}"> State of Matter</a>
+  <a href="{{ url_for('solid') }}"> Solid</a>
+  <a href="{{ url_for('liquid') }}"> Liquid</a>
+  <a href="{{ url_for('gas') }}"> Gas</a>
+  <a href="{{ url_for('plasma') }}"> Plasma</a>
+</div>
+
+<div>
+<center>
+<h2 style="font-family:'Courier New'">STATE OF MATTER</h2>
+  </center>
+</div>
+
+<div>
+  <p style="text-indent: 3em;text-align: justify; margin-left: 80px; margin-right: 80px;">In physics, a state of matter is one of the distinct forms in which matter can exist. Four states of matter are observable in everyday life: solid, liquid, gas, and plasma. Many intermediate states are known to exist, such as liquid crystal, and some states only exist under extreme conditions, such as Bose–Einstein condensates (in extreme cold), neutron-degenerate matter (in extreme density), and quark–gluon plasma (at extremely high energy). For a complete list of all exotic states of matter, see the list of states of matter.</p>
+
+<p style="text-indent: 3em;text-align: justify; margin-left: 80px; margin-right: 80px;">Historically, the distinction is made based on qualitative differences in properties. Matter in the solid state maintains a fixed volume (assuming no change in temperature or air pressure) and shape, with component particles (atoms, molecules or ions) close together and fixed into place. Matter in the liquid state maintains a fixed volume (assuming no change in temperature or air pressure), but has a variable shape that adapts to fit its container. Its particles are still close together but move freely. Matter in the gaseous state has both variable volume and shape, adapting both to fit its container. Its particles are neither close together nor fixed in place. Matter in the plasma state has variable volume and shape, and contains neutral atoms as well as a significant number of ions and electrons, both of which can move around freely.</p>
+
+<p style="text-indent: 3em;text-align: justify; margin-left: 80px; margin-right: 80px;">The term "phase" is sometimes used as a synonym for state of matter, but it is possible for a single compound to form different phases that are in the same state of matter. For example, ice is the solid state of water, but there are multiple phases of ice with different crystal structures, which are formed at different pressures and temperatures.</p>
+</div>
+
+<div>
+<center>
+<h2 style="font-family:'Courier New'">FOUR STATES OF MATTER</h2>
+  </center>
+</div>
+
+<div>
+<p style="text-align: center;">◘ Solid<br>◘ Liquid<br>◘ Gas<br>◘ Plasma
+</div>
+</body>
+</html>

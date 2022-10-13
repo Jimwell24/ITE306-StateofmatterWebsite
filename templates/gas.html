@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<title>Solid</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif; background-image: linear-gradient(to right, #85C1E9,#AED6F1,#D2B4DE,#E8DAEF,#F9E79F,#F7DC6F);}
+
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+  font-family: Courier New;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #FFD384;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+</style>
+<body>
+
+<div class="header">
+  <img src="static/images/gas.jpg" width="100%" height="50%">
+</div>
+<div class="navbar">
+  <a href="{{ url_for('home') }}"> Home</a>
+  <a href="{{ url_for('stateofmatter') }}"> State of Matter</a>
+  <a href="{{ url_for('solid') }}"> Solid</a>
+  <a href="{{ url_for('liquid') }}"> Liquid</a>
+  <a class="active" href="{{ url_for('gas') }}"> Gas</a>
+  <a href="{{ url_for('plasma') }}"> Plasma</a>
+</div>
+
+<div>
+  <br>
+<center>
+<h2 style="font-family:'Courier New'">GAS - STATE OF MATTER</h2>
+  </center>
+</div>
+
+<div>
+  <p style="text-indent: 3em;text-align: justify; margin-left: 80px; margin-right: 80px;">A gas is defined as a state of matter consisting of particles that have neither a defined volume nor defined shape. It is one of the four fundamental states of matter, along with solids, liquids, and plasma. Under ordinary conditions, the gas state is between the liquid and plasma states. A gas may consist of atoms of one element (e.g., H2, Ar) or of compounds (e.g., HCl, CO2) or mixtures (e.g., air, natural gas).</p>
+
+  <p style="text-indent: 3em;text-align: justify; margin-left: 80px; margin-right: 80px;">A gas is a compressible fluid. Not only will a gas conform to the shape of its container but it will also expand to fill the container. In a gas, the molecules have enough kinetic energy so that the effect of intermolecular forces is small (or zero for an ideal gas), and the typical distance between neighboring molecules is much greater than the molecular size. A gas has no definite shape or volume, but occupies the entire container in which it is confined. A liquid may be converted to a gas by heating at constant pressure to the boiling point, or else by reducing the pressure at constant temperature.</p>
+</div>
+
+<div>
+<center>
+  <br>
+<h2 style="font-family:'Courier New'">GAS - EXAMPLE</h2>
+  </center>
+</div>
+
+<div>
+<p style="text-align: center;">◘ Hydrogen<br>◘ Nitrogen<br>◘ Oxygen<br>◘ Carbon Dioxide<br>◘ Carbon Monoxide</p>
+</div>
+
+</body>
+</html>

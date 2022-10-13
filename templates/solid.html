@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<title>Solid</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif; background-image: linear-gradient(to right, #85C1E9,#AED6F1,#D2B4DE,#E8DAEF,#F9E79F,#F7DC6F);}
+
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+  font-family: Courier New;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #FFD384;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+</style>
+<body>
+
+<div class="header">
+  <img src="static/images/solid.jpg" width="100%" height="50%">
+</div>
+<div class="navbar">
+  <a href="{{ url_for('home') }}"> Home</a>
+  <a href="{{ url_for('stateofmatter') }}"> State of Matter</a>
+  <a class="active" href="{{ url_for('solid') }}"> Solid</a>
+  <a href="{{ url_for('liquid') }}"> Liquid</a>
+  <a href="{{ url_for('gas') }}"> Gas</a>
+  <a href="{{ url_for('plasma') }}"> Plasma</a>
+</div>
+
+<div>
+<center>
+<h2 style="font-family:'Courier New'">SOLID - STATE OF MATTER</h2>
+  </center>
+</div>
+
+<div>
+  <p style="text-indent: 3em;text-align: justify; margin-left: 80px; margin-right: 80px;">In a solid, constituent particles (ions, atoms, or molecules) are closely packed together. The forces between particles are so strong that the particles cannot move freely but can only vibrate. As a result, a solid has a stable, definite shape, and a definite volume. Solids can only change their shape by an outside force, as when broken or cut.</p>
+
+  <p style="text-indent: 3em;text-align: justify; margin-left: 80px; margin-right: 80px;">In crystalline solids, the particles (atoms, molecules, or ions) are packed in a regularly ordered, repeating pattern. There are various different crystal structures, and the same substance can have more than one structure (or solid phase). For example, iron has a body-centred cubic structure at temperatures below 912 °C (1,674 °F), and a face-centred cubic structure between 912 and 1,394 °C (2,541 °F). Ice has fifteen known crystal structures, or fifteen solid phases, which exist at various temperatures and pressures.</p>
+
+  <p style="text-indent: 3em;text-align: justify; margin-left: 80px; margin-right: 80px;">Glasses and other non-crystalline, amorphous solids without long-range order are not thermal equilibrium ground states; therefore they are described below as nonclassical states of matter.</p>
+
+  <p style="text-indent: 3em;text-align: justify; margin-left: 80px; margin-right: 80px;">Solids can be transformed into liquids by melting, and liquids can be transformed into solids by freezing. Solids can also change directly into gases through the process of sublimation, and gases can likewise change directly into solids through deposition.</p>
+</div>
+
+<div>
+<center>
+<h2 style="font-family:'Courier New'">SOLID - EXAMPLE</h2>
+  </center>
+</div>
+
+<div>
+<p style="text-align: center;">◘ Bricks and other building materials, like concrete, wood and glass<br>◘ Dry ice or frozen carbon dioxide<br>◘ Ice<br>◘ Rocks<br>◘ Salt</p>
+</div>
+
+</body>
+</html>

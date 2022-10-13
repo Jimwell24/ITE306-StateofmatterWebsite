@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<title>Solid</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif; background-image: linear-gradient(to right, #85C1E9,#AED6F1,#D2B4DE,#E8DAEF,#F9E79F,#F7DC6F);}
+
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+  font-family: Courier New;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #FFD384;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+</style>
+<body>
+
+<div class="header">
+  <img src="static/images/liquid.jpg" width="100%" height="50%">
+</div>
+<div class="navbar">
+  <a href="{{ url_for('home') }}"> Home</a>
+  <a href="{{ url_for('stateofmatter') }}"> State of Matter</a>
+  <a href="{{ url_for('solid') }}"> Solid</a>
+  <a class="active" href="{{ url_for('liquid') }}"> Liquid</a>
+  <a href="{{ url_for('gas') }}"> Gas</a>
+  <a href="{{ url_for('plasma') }}"> Plasma</a>
+</div>
+
+<div>
+  <br>
+<center>
+<h2 style="font-family:'Courier New'">LIQUID - STATE OF MATTER</h2>
+  </center>
+</div>
+
+<div>
+  <p style="text-indent: 3em;text-align: justify; margin-left: 80px; margin-right: 80px;">In a liquid state of matter, particles are less tightly packed as compared to solids. Liquids take the shape of the container in which they are kept. Liquids are difficult to compress as particles have less space between them to move. Liquids have fixed volume but no fixed shape.</p>
+
+  <p style="text-indent: 3em;text-align: justify; margin-left: 80px; margin-right: 80px;">A liquid is a nearly incompressible fluid that conforms to the shape of its container but retains a (nearly) constant volume independent of pressure. The volume is definite if the temperature and pressure are constant. When a solid is heated above its melting point, it becomes liquid, given that the pressure is higher than the triple point of the substance. Intermolecular (or interatomic or interionic) forces are still important, but the molecules have enough energy to move relative to each other and the structure is mobile. This means that the shape of a liquid is not definite but is determined by its container. The volume is usually greater than that of the corresponding solid, the best known exception being water, H2O. The highest temperature at which a given liquid can exist is its critical temperature.</p>
+</div>
+
+<div>
+<center>
+  <br>
+<h2 style="font-family:'Courier New'">LIQUID - EXAMPLE</h2>
+  </center>
+</div>
+
+<div>
+<p style="text-align: center;">◘ Water<br>◘ Milk<br>◘ Blood<br>◘ Urine<br>◘ Wine</p>
+</div>
+
+</body>
+</html>
